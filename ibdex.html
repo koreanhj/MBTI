@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>우리 아이 MBTI 성향 알아보기</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <p class="badge">부모-자녀 소통 도우미</p>
+      <h1>우리 아이 MBTI 성향 알아보기</h1>
+      <p class="subtitle">
+        간단한 질문을 통해 자녀의 성향을 살펴보고, 유형별 소통 팁을 확인해 보세요.
+      </p>
+    </header>
+
+    <main id="quizArea">
+      <div class="progress">
+        <div id="progressBar"></div>
+      </div>
+
+      <section class="card">
+        <p id="questionNumber"></p>
+        <h2 id="questionText"></h2>
+
+        <div class="choices">
+          <button id="choiceA"></button>
+          <button id="choiceB"></button>
+        </div>
+      </section>
+    </main>
+
+    <section id="resultArea" class="result hidden">
+      <p class="badge">검사 결과</p>
+      <h2 id="mbtiResult"></h2>
+      <p id="resultDesc"></p>
+
+      <div class="tipBox">
+        <h3>부모님께 드리는 소통 팁</h3>
+        <ul id="tips"></ul>
+      </div>
+
+      <button class="restart" onclick="restartQuiz()">다시 검사하기</button>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
